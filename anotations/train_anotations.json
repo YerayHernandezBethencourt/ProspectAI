@@ -1,0 +1,27 @@
+[
+    {
+      "image_path": "../prospectos/train/alprazolan/IMG_5046.JPG",
+      "text": {
+        "qué_es": "Alprazolan es un medicamento perteneciente a la familia de los benzodiazepínicos.",
+        "uso": "Se utiliza para tratar síntomas de ansiedad y estrés.",
+        "precauciones": "Antes de tomarlo, debe leer las precauciones, ya que puede interactuar con otros medicamentos o ser contraindicado para ciertas condiciones médicas.",
+        "forma_tomar": "La forma de tomarlo suele ser oral, según se indica en el prospecto.",
+        "efectos_adversos": "Los efectos adversos pueden incluir somnolencia, mareo, debilidad muscular y problemas de coordinación.",
+        "conservación": "Debe conservarse en un lugar seguro y fuera del alcance de niños.",
+        "info_adicional": "Contiene información adicional sobre la dosis recomendada, posibles interacciones con otros medicamentos y consejos para el paciente."
+      }
+    },
+    {
+      "image_path": "../prospectos/train/hidroferol/IMG_5042.JPG",
+      "text": {
+        "qué_es": "Hidroferol  0,266 mg es un medicamento es un medicamento que contiene ácido hialurónico",
+        "uso": "Se utiliza para tratar síntomas relacionados con la artritis reumatoide, incluyendo dolor articular, rigidez y limitación funcional.",
+        "precauciones": "Antes de tomarlo, se recomienda informar a un profesional de la salud si se tiene alergia a ácido hialurónico o cualquier otro componente del medicamento, si se está tomando otros medicamentos o si se está embarazada o amamantando.",
+        "forma_tomar": "La forma de administración es oral, y se debe tomar con agua.",
+        "efectos_adversos": "Los efectos adversos pueden incluir diarrea, estreñimiento, dolor abdominal, vómito, dolor de cabeza, insomnio y dolor muscular.",
+        "conservación": "Debe conservarse en un lugar seco y alejado de la luz directa y calor excesivo.",
+        "info_adicional": "Se proporciona información adicional sobre la composición del medicamento, su uso en niños y adultos, y las interacciones con otros medicamentos."
+      }
+    }
+  ]
+  
