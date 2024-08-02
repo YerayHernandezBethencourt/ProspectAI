@@ -1,27 +1,59 @@
 [
     {
-      "image_path": "../prospectos/train/alprazolan/IMG_5046.JPG",
-      "text": {
-        "qué_es": "Alprazolan es un medicamento perteneciente a la familia de los benzodiazepínicos.",
-        "uso": "Se utiliza para tratar síntomas de ansiedad y estrés.",
-        "precauciones": "Antes de tomarlo, debe leer las precauciones, ya que puede interactuar con otros medicamentos o ser contraindicado para ciertas condiciones médicas.",
-        "forma_tomar": "La forma de tomarlo suele ser oral, según se indica en el prospecto.",
-        "efectos_adversos": "Los efectos adversos pueden incluir somnolencia, mareo, debilidad muscular y problemas de coordinación.",
-        "conservación": "Debe conservarse en un lugar seguro y fuera del alcance de niños.",
-        "info_adicional": "Contiene información adicional sobre la dosis recomendada, posibles interacciones con otros medicamentos y consejos para el paciente."
-      }
+      "id": "1",
+      "image": ["../prospectos/train/alprazolan/alprazolan.JPG"],
+      "conversation": [
+        {
+            "role": "user", 
+            "content": "Examina el prospecto médico de la imagen y enumera los detalles más importantes relacionados con: - Qué es el medicamento. - Para qué se utiliza el medicamento. - Precauciones antes de tomarlo. - Forma de tomarlo. - Efectos adversos del fármaco. - Conservación del fármaco. - Información adicional."},
+        {
+            "role": "assistant", 
+            "content": "El prospecto médico de la imagen proporciona información detallada sobre el medicamento Alprazolam, que es un fármaco perteneciente a la familia de los benzodiazepínicos. El medicamento se utiliza comúnmente para tratar síntomas de ansiedad y estrés. Antes de tomar este medicamento, es importante ser consciente de las precauciones, como no utilizarlo si se tiene alergia a Alprazolam o si se está tomando otros medicamentos que puedan interactuar con él. También se indica que el medicamento debe tomarse exactamente según las instrucciones del médico y no se debe sobredosis ni suspender repentinamente.En cuanto a los efectos adversos, el prospecto menciona posibles reacciones secundarias como somnolencia, debilidad muscular, mareo, visión borrosa, fatiga, irritabilidad, ansiedad aumentada, depresión, confusión, problemas de memoria, alteraciones del lenguaje, problemas de coordinación, temblor, y en casos raros, pensamientos suicidas o intentos de suicidio. Es fundamental informar al médico de cualquier efecto adverso observado.Para la conservación del medicamento, se sugiere almacenarlo en un lugar seco y fresco, lejos de la luz directa y de los niños. Además, el prospecto incluye una sección de información adicional que podría contener detalles sobre interacciones medicamentosas, uso durante el embarazo y la lactancia, y otros aspectos importantes relacionados con el uso del medicamento."},
+            {
+              "role": "user",
+              "content": "¿Puedo tomar este medicamento si estoy embarazada?"
+            },
+            {
+              "role": "assistant",
+              "content": "El prospecto sugiere que antes de tomar Alprazolam durante el embarazo, se debe consultar con un médico. El uso de benzodiazepinas durante el embarazo puede estar asociado con riesgos para el feto."
+            },
+            {
+              "role": "user",
+              "content": "¿Qué debo hacer si me olvido de tomar una dosis?"
+            },
+            {
+              "role": "assistant",
+              "content": "Si olvida tomar una dosis de Alprazolam, tómela tan pronto como lo recuerde. Si ya es casi la hora de la siguiente dosis, omita la dosis olvidada y tome la siguiente dosis a la hora habitual. No tome una dosis doble para compensar la dosis olvidada."
+            }
+      ]
     },
     {
-      "image_path": "../prospectos/train/hidroferol/IMG_5042.JPG",
-      "text": {
-        "qué_es": "Hidroferol  0,266 mg es un medicamento es un medicamento que contiene ácido hialurónico",
-        "uso": "Se utiliza para tratar síntomas relacionados con la artritis reumatoide, incluyendo dolor articular, rigidez y limitación funcional.",
-        "precauciones": "Antes de tomarlo, se recomienda informar a un profesional de la salud si se tiene alergia a ácido hialurónico o cualquier otro componente del medicamento, si se está tomando otros medicamentos o si se está embarazada o amamantando.",
-        "forma_tomar": "La forma de administración es oral, y se debe tomar con agua.",
-        "efectos_adversos": "Los efectos adversos pueden incluir diarrea, estreñimiento, dolor abdominal, vómito, dolor de cabeza, insomnio y dolor muscular.",
-        "conservación": "Debe conservarse en un lugar seco y alejado de la luz directa y calor excesivo.",
-        "info_adicional": "Se proporciona información adicional sobre la composición del medicamento, su uso en niños y adultos, y las interacciones con otros medicamentos."
-      }
+        "id": "2",
+        "image_path_list": ["../prospectos/train/hidroferol/hidroferol.JPG"],
+        "conversation": [
+            {
+                "role": "user", 
+                "content": "Examina el prospecto médico de la imagen y enumera los detalles más importantes relacionados con: - Qué es el medicamento. - Para qué se utiliza el medicamento. - Precauciones antes de tomarlo. - Forma de tomarlo. - Efectos adversos del fármaco. - Conservación del fármaco. - Información adicional."},
+            {
+                "role": "assistant", 
+                "content": "El prospecto médico de la imagen proporciona una variedad de detalles importantes sobre el medicamento. El medicamento se identifica como 'Hidroferol 0,266 mg' y se describe como un medicamento que contiene ácido hialurónico. Se utiliza para tratar síntomas relacionados con la artritis reumatoide, incluyendo dolor articular, rigidez y limitación funcional. Antes de tomar el medicamento, se recomienda informar a un profesional de la salud si se tiene alergia a ácido hialurónico o cualquier otro componente del medicamento, si se está tomando otros medicamentos o si se está embarazada o amamantando. La forma de administración es oral, y se debe tomar con agua. Los efectos adversos potenciales incluyen diarrea, estreñimiento, dolor abdominal, vómito, dolor de cabeza, insomnio y dolor muscular. El medicamento debe conservarse en un lugar seco y alejado de la luz directa y calor excesivo. Además, se proporciona información adicional sobre la composición del medicamento, su uso en niños y adultos, y las interacciones con otros medicamentos."
+            },
+            {
+              "role": "user",
+              "content": "¿Es seguro tomar este medicamento si tengo problemas estomacales?"
+            },
+            {
+              "role": "assistant",
+              "content": "Si tiene problemas estomacales, debe informar a su médico antes de tomar Hidroferol. Algunos efectos secundarios incluyen diarrea y dolor abdominal, por lo que su médico puede decidir si es adecuado para usted."
+            },
+            {
+              "role": "user",
+              "content": "¿Puede este medicamento interactuar con otros medicamentos que estoy tomando?"
+            },
+            {
+              "role": "assistant",
+              "content": "Sí, el prospecto sugiere que Hidroferol puede interactuar con otros medicamentos. Es importante informar a su médico sobre todos los medicamentos que está tomando para evitar posibles interacciones."
+            }
+      ]
     }
   ]
-  
