@@ -2,31 +2,32 @@ import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer, Trainer, TrainingArguments
 from datasets import load_dataset
 
+
 # Ruta al archivo JSON
 data_files = {
-    "train": "../anotations/train_anotations.json",
-    "validation": "../anotations/val_anotations.json"
+    "train": "\ train_anotations.json",
+    "validation": "\ val_anotations.json"
 }
 
 # Configura el modelo y el tokenizer
 MODEL = "openbmb/MiniCPM-Llama3-V-2_5"
+LLM_TYPE = "llama3"
 DATA = "../anotations/train_anotations.json"
 EVAL_DATA = "../anotations/val_anotations.json"
-LLM_TYPE = "llama3"
 tokenizer = AutoTokenizer.from_pretrained(MODEL, trust_remote_code=True)
 model = AutoModelForCausalLM.from_pretrained(MODEL, trust_remote_code=True)
 
 # Carga los datos
 def preprocess_function(examples):
-    inputs = [ex["conversations"][0]["content"] for ex in examples["data"]]
-    targets = [ex["conversations"][1]["content"] for ex in examples["data"]]
+    inputs = [ex["conversations"][0]["content"] for ex in examples]
+    targets = [ex["conversations"][1]["content"] for ex in examples]
     model_inputs = tokenizer(inputs, max_length=512, truncation=True, padding="max_length")
     labels = tokenizer(targets, max_length=512, truncation=True, padding="max_length")
     model_inputs["labels"] = labels["input_ids"]
     return model_inputs
 
-train_dataset = load_dataset("json", data_files="train_anotations.json", split="train")
-eval_dataset = load_dataset("json", data_files="val_anotations.json", split="train")
+train_dataset = load_dataset("json", data_files="./train_anotations.json", split="train")
+eval_dataset = load_dataset("json", data_files="./val_anotations.json", split="train")
 
 train_dataset = train_dataset.map(preprocess_function, batched=True)
 eval_dataset = eval_dataset.map(preprocess_function, batched=True)
@@ -44,6 +45,7 @@ training_args = TrainingArguments(
     logging_steps=200,
     do_train=True,
     do_eval=True,
+    deepspeed="./deepspeed_config.json",  # Usar configuración de DeepSpeed
 )
 
 # Configura el entrenador
