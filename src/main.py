@@ -1,7 +1,7 @@
 from config import get_device, load_image, load_model_and_tokenizer, generate_answer, get_bnb_config
 
 def main():
-    img_path = "../prospectos/train/alprazolan/alprazolan.JPG"
+    img_path = "C:/Users/yera_/Documents/Areas/En proceso/Qualentum-Proyectos/ProspectAI/ProspectAI/prospectos/test/paracetamol/IMG_5049.JPG"
     prompt = ('Examine the medical leaflet in the image and list the most important details related to: '
               '- What the medicine is. '
               '- What the medicine is used for. '
@@ -22,7 +22,7 @@ def main():
     model, tokenizer = load_model_and_tokenizer(model_id, bnb_cfg)
 
     try:
-        answer = generate_answer(model, tokenizer, image, prompt, device)
+        answer = generate_answer(model, tokenizer, image, prompt)
         print("Model answer:", answer)
     except Exception as e:
         print("Error during model inference:", str(e))

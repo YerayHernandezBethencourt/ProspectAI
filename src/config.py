@@ -27,7 +27,7 @@ def load_model_and_tokenizer(model_id, bnb_cfg):
     tokenizer = AutoTokenizer.from_pretrained(model_id, use_fast=True)
     return model, tokenizer
 
-def generate_answer(model, tokenizer, image, prompt, device):
+def generate_answer(model, tokenizer, image, prompt):
     """
     Genera una respuesta usando el modelo para la imagen y el prompt proporcionados.
 
@@ -38,7 +38,7 @@ def generate_answer(model, tokenizer, image, prompt, device):
     :param device: Dispositivo a usar (CPU o GPU).
     :return: Respuesta generada por el modelo.
     """
-    model.to(device)
+    
     answer = model.answer_question(image, prompt, tokenizer)
     return tokenizer.decode(answer, skip_special_tokens=True)
 
