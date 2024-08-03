@@ -1,0 +1,62 @@
+[
+  {
+    "id": "5",
+    "image": "../prospectos/test/paracetamol/IMG_5048.JPG",
+    "conversations": [
+      {
+        "role": "user",
+        "content": "<image>\nExamina el prospecto médico de la imagen y enumera los detalles más importantes relacionados con: - Qué es el medicamento. - Para qué se utiliza el medicamento. - Precauciones antes de tomarlo. - Forma de tomarlo. - Efectos adversos del fármaco. - Conservación del fármaco. - Información adicional."
+      },
+      {
+        "role": "assistant",
+        "content": "El prospecto médico de la imagen proporciona información detallada sobre Paracetamol cinfa, un medicamento del grupo de analgésicos y antipiréticos. Este medicamento está indicado para el tratamiento sintomático del dolor leve o moderado y de la fiebre en adultos y adolescentes mayores de 15 años y con un peso superior a 50 kg. Antes de tomarlo, debe consultar a su médico si está tomando otros medicamentos, si padece alguna enfermedad hepática, renal o cardíaca, si está embarazada o en período de lactancia, entre otras condiciones. La dosis recomendada para adultos y adolescentes mayores de 15 años y con un peso superior a 50 kg es de 1 comprimido cada 6-8 horas, según necesidad, sin exceder los 3 comprimidos en 24 horas. Los efectos adversos pueden incluir reacciones alérgicas, problemas hepáticos y trastornos hematológicos, entre otros. Debe conservarse en un lugar seco y a temperatura ambiente, protegido de la luz. Para más información, consulte a su médico o farmacéutico."
+      },
+      {
+        "role": "user",
+        "content": "¿Puedo tomar este medicamento si estoy embarazada?"
+      },
+      {
+        "role": "assistant",
+        "content": "Si está embarazada, debe consultar a su médico antes de tomar Paracetamol cinfa. Su médico evaluará los riesgos y beneficios de tomar este medicamento durante el embarazo."
+      },
+      {
+        "role": "user",
+        "content": "¿Qué debo hacer si experimento una reacción alérgica?"
+      },
+      {
+        "role": "assistant",
+        "content": "Si experimenta una reacción alérgica, como dificultad para respirar, hinchazón de la cara, labios, lengua o garganta, debe buscar atención médica de inmediato. Interrumpa el uso del medicamento y consulte a su médico."
+      }
+    ]
+  },
+  {
+    "id": "6",
+    "image": "../prospectos/test/VitaminaB12/IMG_5044.JPG",
+    "conversations": [
+      {
+        "role": "user",
+        "content": "<image>\nExamina el prospecto médico de la imagen y enumera los detalles más importantes relacionados con: - Qué es el medicamento. - Para qué se utiliza el medicamento. - Precauciones antes de tomarlo. - Forma de tomarlo. - Efectos adversos del fármaco. - Conservación del fármaco. - Información adicional."
+      },
+      {
+        "role": "assistant",
+        "content": "El prospecto médico de la imagen proporciona información detallada sobre Vitamina B12 Farmasierra, un medicamento que contiene cianocobalamina (vitamina B12) como principio activo. Se utiliza para tratar y prevenir la anemia perniciosa y otras deficiencias de vitamina B12, así como en casos de dietas inadecuadas (vegetarianos estrictos) y ciertas condiciones médicas que dificultan la absorción de esta vitamina. Antes de tomarlo, debe consultar a su médico si tiene alergia a la cianocobalamina u otras cobalaminas, si padece alguna enfermedad hereditaria del nervio óptico, si tiene deficiencia de ácido fólico o si está embarazada o en período de lactancia. La dosis y la duración del tratamiento deben ser determinadas por el médico, basándose en la severidad de la deficiencia y la respuesta del paciente al tratamiento. Los efectos adversos pueden incluir reacciones alérgicas, trastornos gastrointestinales, y raramente, problemas hematológicos. Debe conservarse en un lugar seco y a temperatura ambiente, protegido de la luz. Para más información, consulte a su médico o farmacéutico."
+      },
+      {
+        "role": "user",
+        "content": "¿Puedo tomar este medicamento si tengo deficiencia de ácido fólico?"
+      },
+      {
+        "role": "assistant",
+        "content": "Si tiene deficiencia de ácido fólico, debe consultar a su médico antes de tomar Vitamina B12 Farmasierra. La combinación de deficiencia de vitamina B12 y ácido fólico puede requerir un ajuste específico en el tratamiento."
+      },
+      {
+        "role": "user",
+        "content": "¿Qué debo hacer si experimento trastornos gastrointestinales?"
+      },
+      {
+        "role": "assistant",
+        "content": "Si experimenta trastornos gastrointestinales, consulte a su médico. Podría ser necesario ajustar la dosis o la forma de administración del medicamento."
+      }
+    ]
+  }
+]
