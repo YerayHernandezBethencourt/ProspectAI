@@ -53,3 +53,34 @@ def get_bnb_config():
         bnb_4bit_compute_dtype=torch.float16,
         llm_int8_skip_modules=["mm_projector", "vision_model"],
     )
+
+def load_conversational_model(model_id):
+    """
+    Carga un modelo de conversación desde Hugging Face Hub.
+
+    :param model_id: ID del modelo en Hugging Face Hub.
+    :return: El modelo y el tokenizador cargados.
+    """
+    conversational_model = AutoModelForCausalLM.from_pretrained(model_id)
+    conversational_tokenizer = AutoTokenizer.from_pretrained(model_id)
+    return conversational_model, conversational_tokenizer
+
+def converse(model, tokenizer, conversation_history, user_input):
+    """
+    Genera una respuesta en una conversación.
+
+    :param model: El modelo cargado.
+    :param tokenizer: El tokenizador cargado.
+    :param conversation_history: El historial de la conversación.
+    :param user_input: La entrada del usuario.
+    :return: Respuesta generada por el modelo.
+    """
+    conversation_history += f"\nUser: {user_input}\nBot: "
+    inputs = tokenizer(conversation_history, return_tensors="pt")#.input_ids
+    input_ids = inputs['input_ids']
+    attention_mask = inputs['attention_mask']
+    outputs = model.generate(input_ids=input_ids, attention_mask=attention_mask, max_length=1000, pad_token_id=tokenizer.eos_token_id)
+    #outputs = model.generate(inputs, max_length=1000, pad_token_id=tokenizer.eos_token_id)
+    response = tokenizer.decode(outputs[:, inputs.shape[-1]:][0], skip_special_tokens=True)
+    conversation_history += response
+    return response, conversation_history
